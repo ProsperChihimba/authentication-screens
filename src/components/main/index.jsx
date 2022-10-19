@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <Flex>
             <RightSide />
-            <Box pr='100px' pl='100px' pt='80px' fontFamily='Inter'>
+            <Box pr='100px' background='white' pl='100px' pt='80px' fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'
