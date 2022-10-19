@@ -1,11 +1,11 @@
 import React from 'react'
-import { Box, Image, Flex, Text } from '@chakra-ui/react';
+import { Box, Image, Flex, Text, Spacer } from '@chakra-ui/react';
 import logo from '../../assets/logo.png'
 
 const RightSide = () => {
     return (
-        <Box w='50%' bg='#040308' h='100vh' p='100px' fontFamily='Inter'>
-            <Flex>
+        <Box w='50%' bg='#040308' h='100vh' pl='100px' pt='50px' pb='50px' fontFamily='Inter'>
+            <Flex direction='column' h='100%' >
                 <Flex gap='30px'>
                     <Image src={logo} w='55px' h='40px' />
                     <Text
@@ -16,6 +16,21 @@ const RightSide = () => {
                         DopeSaas
                     </Text>
                 </Flex>
+                <Spacer />
+                <Text
+                    color='#FFFFFF'
+                    fontWeight='700'
+                    fontSize='36px'
+                    mb='20px'
+                >
+                    Numquam architecto iure
+                </Text>
+                <Text
+                    color='white'
+                    fontWeight='100'
+                >
+                    Ut corrupti est molestiae occaecati voluptatem vel harum explicabo numquam.
+                </Text>
             </Flex>
         </Box>
     )
