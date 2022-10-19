@@ -1,12 +1,103 @@
 import React from 'react'
-import { Flex, Box } from '@chakra-ui/react'
+import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button } from '@chakra-ui/react'
+import { AiFillEyeInvisible } from "react-icons/ai";
 import RightSide from '../rightSide'
 
 const Main = () => {
     return (
         <Flex>
             <RightSide />
-            <Box w='50%' >Main</Box>
+            <Box p='100px' fontFamily='Inter'>
+                <Text
+                    as='b'
+                    color='#040308'
+                    fontWeight='bold'
+                    fontSize='25px'
+                    mb='20px'
+                >
+                    Create account
+                </Text>
+                <Flex mb='65px'>
+                    <Text
+                        color='#040308'
+                        fontSize='12px'
+                    >
+                        Already have an account? 
+                    </Text>
+                    <Text
+                        color='#312ECB'
+                        fontSize='12px'
+                        
+                    >
+                        &nbsp;Login
+                    </Text>
+                </Flex>
+
+                <Flex gap='20px' mb='20px'>
+                    <Input
+                        borderColor='gray'
+                        placeholder='First Name'
+                        size='md'
+                        fontSize='15px'
+                    />
+                    <Input
+                        placeholder='Last Name'
+                        size='md'
+                        borderColor='gray'
+                        fontSize='15px'
+                    />
+                </Flex>
+                <Input
+                    placeholder='Email'
+                    type='email'
+                    size='md'
+                    borderColor='gray'
+                    fontSize='15px'
+                    mb='20px'
+                />
+                <InputGroup>
+                    <Input
+                        placeholder='Password'
+                        size='md'
+                        type='password'
+                        borderColor='gray'
+                        fontSize='15px'
+                        mb='20px'
+                    />
+                    <InputRightElement children={<AiFillEyeInvisible color='gray' />} />
+                </InputGroup>
+                
+
+                <Flex mb='20px'>
+                    <Checkbox size='md' borderColor='gray' />
+                    <Text
+                        color='#040308'
+                        fontSize='12px'
+                    >
+                        &nbsp;I agree to DopeSass
+                    </Text>
+                    <Text
+                        color='#312ECB'
+                        fontSize='12px'
+                    >
+                        &nbsp;Terms of service
+                    </Text>
+                    <Text
+                        color='#040308'
+                        fontSize='12px'
+                    >
+                        &nbsp;and
+                    </Text>
+                    <Text
+                        color='#312ECB'
+                        fontSize='12px'
+                    >
+                        &nbsp;Privacy policy
+                    </Text>
+                </Flex>
+
+                <Button bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Create Account</Button>
+            </Box>
         </Flex>
     )
 }

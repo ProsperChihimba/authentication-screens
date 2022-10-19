@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 
 const RightSide = () => {
     return (
-        <Box w='50%' bg='#040308' h='100vh' pl='100px' pt='50px' pb='50px' fontFamily='Inter'>
+        <Box w='50%' bg='#040308' h='100vh' pl='100px' pt='60px' pb='60px' fontFamily='Inter'>
             <Flex direction='column' h='100%' >
                 <Flex gap='30px'>
                     <Image src={logo} w='55px' h='40px' />
@@ -28,6 +28,7 @@ const RightSide = () => {
                 <Text
                     color='white'
                     fontWeight='100'
+                    fontSize='16px'
                 >
                     Ut corrupti est molestiae occaecati voluptatem vel harum explicabo numquam.
                 </Text>
