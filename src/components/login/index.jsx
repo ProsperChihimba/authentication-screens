@@ -19,7 +19,7 @@ const Login = () => {
     return (
         <Flex>
             <RightSide />
-            <Box background='white' width='50%' pl='100px' pr='100px' pt='80px' fontFamily='Inter'>
+            <Box background='white' width={{ base: '100%', md: '50%', xl: '50%' }} pl='100px' pr='100px' pt='80px' fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'

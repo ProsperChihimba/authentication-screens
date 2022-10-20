@@ -11,7 +11,7 @@ const RightSide = () => {
             pl='100px'
             pt='60px'
             pb='60px'
-            // display={{ base: 'none', md: 'none', xl: 'block' }}
+            display={{ base: 'none', md: 'block', xl: 'block' }}
             fontFamily='Inter'
         >
             <Flex direction='column' h='100%' >
