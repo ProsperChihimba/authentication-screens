@@ -3,11 +3,11 @@ import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button
 import { AiFillEyeInvisible, AiFillApple, AiOutlineGoogle } from "react-icons/ai";
 import RightSide from '../rightSide'
 
-const Main = () => {
+const Login = () => {
     return (
         <Flex>
             <RightSide />
-            <Box pr='100px' background='white' pl='100px' pt='80px' width='50%' fontFamily='Inter'>
+            <Box background='white' width='50%' pl='100px' pr='100px' pt='80px' fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'
@@ -15,38 +15,24 @@ const Main = () => {
                     fontSize='25px'
                     mb='20px'
                 >
-                    Create account
+                    Welcome Back
                 </Text>
                 <Flex mb='55px'>
                     <Text
                         color='#040308'
                         fontSize='12px'
                     >
-                        Already have an account? 
+                        Don't have an account? 
                     </Text>
                     <Text
                         color='#312ECB'
                         fontSize='12px'
                         
                     >
-                        &nbsp;Login
+                        &nbsp;Sign Up
                     </Text>
                 </Flex>
 
-                <Flex gap='20px' mb='20px'>
-                    <Input
-                        borderColor='gray'
-                        placeholder='First Name'
-                        size='md'
-                        fontSize='15px'
-                    />
-                    <Input
-                        placeholder='Last Name'
-                        size='md'
-                        borderColor='gray'
-                        fontSize='15px'
-                    />
-                </Flex>
                 <Input
                     placeholder='Email'
                     type='email'
@@ -55,7 +41,7 @@ const Main = () => {
                     fontSize='15px'
                     mb='20px'
                 />
-                <InputGroup>
+                <InputGroup width='100%'>
                     <Input
                         placeholder='Password'
                         size='md'
@@ -68,35 +54,16 @@ const Main = () => {
                 </InputGroup>
                 
 
-                <Flex mb='20px'>
-                    <Checkbox size='md' borderColor='gray' />
-                    <Text
-                        color='#040308'
-                        fontSize='12px'
-                    >
-                        &nbsp;I agree to DopeSass
-                    </Text>
+                <Flex mb='20px' align='end'>
                     <Text
                         color='#312ECB'
                         fontSize='12px'
                     >
-                        &nbsp;Terms of service
-                    </Text>
-                    <Text
-                        color='#040308'
-                        fontSize='12px'
-                    >
-                        &nbsp;and
-                    </Text>
-                    <Text
-                        color='#312ECB'
-                        fontSize='12px'
-                    >
-                        &nbsp;Privacy policy
+                        Forgot Password
                     </Text>
                 </Flex>
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Create Account</Button>
+                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Login</Button>
 
                 <Flex gap='10px' mb='20px'>
                     <Divider orientation='horizontal' color='gray' mt='6px' size='lg' /> 
@@ -112,4 +79,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Login
