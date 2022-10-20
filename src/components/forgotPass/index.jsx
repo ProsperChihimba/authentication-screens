@@ -1,8 +1,20 @@
 import React from 'react'
-import { Flex, Box, Text, Input, Button  } from '@chakra-ui/react'
+import { Flex, Box, Text, Input, Button } from '@chakra-ui/react'
+import { useNavigate} from 'react-router-dom'
 import RightSide from '../rightSide'
 
 const ForgotPass = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+    navigate('/');
+    };
+
+    const navigateToEmailSent = () => {
+    navigate('/email-sent');
+    };
+
     return (
         <Flex>
             <RightSide />
@@ -34,9 +46,9 @@ const ForgotPass = () => {
                 />
                 
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Send</Button>
+                <Button onClick={navigateToEmailSent} mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Send</Button>
 
-                <Button bg='#FFFFFF' color='black' size='sm' border='2px' width='100%' fontSize='12px'>Back to Login</Button>
+                <Button onClick={navigateToLogin} bg='#FFFFFF' color='black' size='sm' border='2px' width='100%' fontSize='12px'>Back to Login</Button>
             </Box>
         </Flex>
     )

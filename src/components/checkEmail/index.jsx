@@ -1,8 +1,20 @@
 import React from 'react'
-import { Flex, Box, Text, Button  } from '@chakra-ui/react'
+import { Flex, Box, Text, Button } from '@chakra-ui/react'
+import { useNavigate} from 'react-router-dom'
 import RightSide from '../rightSide'
 
 const CheckEmail = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+    navigate('/');
+    };
+
+    const navigateToSuccess = () => {
+    navigate('/success');
+    };
+
     return (
         <Flex>
             <RightSide />
@@ -33,9 +45,9 @@ const CheckEmail = () => {
                 </Text>
                 
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Resend Email</Button>
+                <Button onClick={navigateToSuccess} mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Resend Email</Button>
 
-                <Button bg='#FFFFFF' color='black' size='sm' border='2px' width='100%' fontSize='12px'>Back to Login</Button>
+                <Button onClick={navigateToLogin} bg='#FFFFFF' color='black' size='sm' border='2px' width='100%' fontSize='12px'>Back to Login</Button>
             </Box>
         </Flex>
     )

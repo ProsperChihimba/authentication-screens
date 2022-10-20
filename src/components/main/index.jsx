@@ -1,9 +1,21 @@
 import React from 'react'
-import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button, Divider  } from '@chakra-ui/react'
+import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button, Divider } from '@chakra-ui/react'
+import { useNavigate} from 'react-router-dom'
 import { AiFillEyeInvisible, AiFillApple, AiOutlineGoogle } from "react-icons/ai";
 import RightSide from '../rightSide'
 
 const Main = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToVerifyEmail = () => {
+    navigate('/verify-email');
+    };
+
+    const navigateToLogin = () => {
+    navigate('/');
+    };
+
     return (
         <Flex>
             <RightSide />
@@ -27,7 +39,8 @@ const Main = () => {
                     <Text
                         color='#312ECB'
                         fontSize='12px'
-                        
+                        onClick={navigateToLogin}
+                        cursor='pointer'
                     >
                         &nbsp;Login
                     </Text>
@@ -96,7 +109,7 @@ const Main = () => {
                     </Text>
                 </Flex>
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Create Account</Button>
+                <Button onClick={navigateToVerifyEmail} mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Create Account</Button>
 
                 <Flex gap='10px' mb='20px'>
                     <Divider orientation='horizontal' color='gray' mt='6px' size='lg' /> 

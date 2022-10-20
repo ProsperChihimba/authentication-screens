@@ -1,9 +1,21 @@
 import React from 'react'
 import { Flex, Box, Text, Input, InputGroup, InputRightElement, Button, Divider  } from '@chakra-ui/react'
 import { AiFillEyeInvisible, AiFillApple, AiOutlineGoogle } from "react-icons/ai";
+import { useNavigate} from 'react-router-dom'
 import RightSide from '../rightSide'
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToForgot = () => {
+    navigate('/forgot-password');
+    };
+
+    const navigateToRegister = () => {
+    navigate('/register');
+    };
+
     return (
         <Flex>
             <RightSide />
@@ -27,7 +39,8 @@ const Login = () => {
                     <Text
                         color='#312ECB'
                         fontSize='12px'
-                        
+                        onClick={navigateToRegister}
+                        cursor='pointer'
                     >
                         &nbsp;Sign Up
                     </Text>
@@ -54,16 +67,27 @@ const Login = () => {
                 </InputGroup>
                 
 
-                <Flex mb='20px' align='end'>
-                    <Text
-                        color='#312ECB'
-                        fontSize='12px'
-                    >
-                        Forgot Password
-                    </Text>
-                </Flex>
+                <Text
+                    onClick={navigateToForgot}
+                    align='end'
+                    cursor='pointer'
+                    color='#312ECB'
+                    fontSize='12px'
+                    mb='20px'
+                >
+                    Forgot Password
+                </Text>
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Login</Button>
+                <Button
+                    mb='20px'
+                    bg='#312ECB'
+                    color='white'
+                    size='sm'
+                    width='100%'
+                    fontSize='12px'
+                >
+                    Login
+                </Button>
 
                 <Flex gap='10px' mb='20px'>
                     <Divider orientation='horizontal' color='gray' mt='6px' size='lg' /> 

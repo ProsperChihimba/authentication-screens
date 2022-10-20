@@ -1,9 +1,17 @@
 import React from 'react'
-import { Flex, Box, Button, Avatar, Center, Text  } from '@chakra-ui/react'
+import { Flex, Box, Button, Avatar, Center, Text } from '@chakra-ui/react'
+import { useNavigate} from 'react-router-dom'
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import RightSide from '../rightSide'
 
 const Success = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+    navigate('/');
+    };
+
     return (
         <Flex>
             <RightSide />
@@ -24,7 +32,7 @@ const Success = () => {
                 </Text>
                 </Center>
 
-                <Button mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Login</Button>
+                <Button onClick={navigateToLogin} mb='20px' bg='#312ECB' color='white' size='sm' width='100%' fontSize='12px'>Login</Button>
             </Box>
         </Flex>
     )
