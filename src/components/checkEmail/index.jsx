@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button, Divider  } from '@chakra-ui/react'
-import { AiFillEyeInvisible, AiFillApple, AiOutlineGoogle } from "react-icons/ai";
+import { Flex, Box, Text, Button  } from '@chakra-ui/react'
 import RightSide from '../rightSide'
 
 const CheckEmail = () => {

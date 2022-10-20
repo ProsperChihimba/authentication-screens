@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Box, Text, Input, InputGroup, InputRightElement, Checkbox, Button, Divider  } from '@chakra-ui/react'
+import { Flex, Box, Text, Input, InputGroup, InputRightElement, Button, Divider  } from '@chakra-ui/react'
 import { AiFillEyeInvisible, AiFillApple, AiOutlineGoogle } from "react-icons/ai";
 import RightSide from '../rightSide'
 
