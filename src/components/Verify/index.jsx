@@ -6,7 +6,7 @@ const Verify = () => {
     return (
         <Flex>
             <RightSide />
-            <Box background='white' pl={{ base: '50px', md: '100px', xl: '100px' }} pr={{ base: '50px', md: '100px', xl: '100px' }} width={{ base: '100%', md: '50%', xl: '50%' }} pt='200px' fontFamily='Inter'>
+            <Box background='white' pl={{ base: '50px', md: '80px', xl: '100px' }} pr={{ base: '50px', md: '80px', xl: '100px' }} width={{ base: '100%', md: '50%', xl: '50%' }} pt='200px' fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'

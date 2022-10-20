@@ -8,7 +8,7 @@ const RightSide = () => {
             w='50%'
             bg='#040308'
             h='100vh'
-            pl='100px'
+            pl={{ base: 'none', md: '70px', xl: '100px' }}
             pt='60px'
             pb='60px'
             display={{ base: 'none', md: 'block', xl: 'block' }}

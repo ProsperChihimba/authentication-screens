@@ -15,7 +15,7 @@ const Success = () => {
     return (
         <Flex>
             <RightSide />
-            <Box background='white' width={{ base: '100%', md: '50%', xl: '50%' }} pl={{ base: '50px', md: '100px', xl: '100px' }} pr={{ base: '50px', md: '100px', xl: '100px' }} pt='250px' fontFamily='Inter'>
+            <Box background='white' width={{ base: '100%', md: '50%', xl: '50%' }} pl={{ base: '50px', md: '80px', xl: '100px' }} pr={{ base: '50px', md: '80px', xl: '100px' }} pt={{ base: '200px', md: '200px', xl: '250px' }} fontFamily='Inter'>
 
                 <Center>
                     <Avatar mb='20px' size='lg' bg='green.100' icon={<AiOutlineCheckCircle size='50px' color='green' />} />

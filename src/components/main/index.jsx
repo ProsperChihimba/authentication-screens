@@ -19,7 +19,7 @@ const Main = () => {
     return (
         <Flex>
             <RightSide />
-            <Box  background='white' pl={{ base: '50px', md: '100px', xl: '100px' }} pr={{ base: '50px', md: '100px', xl: '100px' }} pt='80px' width={{ base: '100%', md: '50%', xl: '50%' }} fontFamily='Inter'>
+            <Box  background='white' pl={{ base: '50px', md: '80px', xl: '100px' }} pr={{ base: '50px', md: '80px', xl: '100px' }} pt='80px' width={{ base: '100%', md: '50%', xl: '50%' }} fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'
@@ -85,27 +85,9 @@ const Main = () => {
                     <Checkbox size='md' borderColor='gray' />
                     <Text
                         color='#040308'
-                        fontSize='12px'
+                        fontSize={{ base: '8px', md: '8px', xl: '12px' }}
                     >
-                        &nbsp;I agree to DopeSass
-                    </Text>
-                    <Text
-                        color='#312ECB'
-                        fontSize='12px'
-                    >
-                        &nbsp;Terms of service
-                    </Text>
-                    <Text
-                        color='#040308'
-                        fontSize='12px'
-                    >
-                        &nbsp;and
-                    </Text>
-                    <Text
-                        color='#312ECB'
-                        fontSize='12px'
-                    >
-                        &nbsp;Privacy policy
+                        &nbsp;&nbsp;I agree to DopeSass Terms of service and Privacy policy
                     </Text>
                 </Flex>
 

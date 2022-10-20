@@ -18,7 +18,7 @@ const CheckEmail = () => {
     return (
         <Flex>
             <RightSide />
-            <Box background='white' width={{ base: '100%', md: '50%', xl: '50%' }} pl={{ base: '50px', md: '100px', xl: '100px' }} pr={{ base: '50px', md: '100px', xl: '100px' }} pt='200px' fontFamily='Inter'>
+            <Box background='white' width={{ base: '100%', md: '50%', xl: '50%' }} pl={{ base: '50px', md: '80px', xl: '100px' }} pr={{ base: '50px', md: '80px', xl: '100px' }} pt={{ base: '150px', md: '200px', xl: '200px' }} fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'
