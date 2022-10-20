@@ -4,11 +4,12 @@ import Main from './components/main';
 import Verify from './components/Verify';
 import Login from './components/login';
 import ForgotPass from './components/forgotPass';
+import CheckEmail from './components/checkEmail';
 
 function App() {
   return (
     <ChakraProvider>
-      <ForgotPass />
+      <CheckEmail />
     </ChakraProvider>
   );
 }
