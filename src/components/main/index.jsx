@@ -19,7 +19,7 @@ const Main = () => {
     return (
         <Flex>
             <RightSide />
-            <Box pr='100px' background='white' pl='100px' pt='80px' width={{ base: '100%', md: '50%', xl: '50%' }} fontFamily='Inter'>
+            <Box  background='white' pl={{ base: '50px', md: '100px', xl: '100px' }} pr={{ base: '50px', md: '100px', xl: '100px' }} pt='80px' width={{ base: '100%', md: '50%', xl: '50%' }} fontFamily='Inter'>
                 <Text
                     as='b'
                     color='#040308'
